@@ -1,10 +1,10 @@
 const mongoose=require("mongoose")
 
 const userSchema=mongoose.Schema({
-    name : String,
+    Firstname : String,
+    Lastname: String,
     email : String,
-    gender : String,
-    address : String
+    password : String
 })
 
 const UserModel=mongoose.model("user",userSchema)

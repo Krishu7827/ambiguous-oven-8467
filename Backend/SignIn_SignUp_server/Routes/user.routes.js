@@ -5,16 +5,24 @@ const bcrypt = require('bcrypt');
 const {client}=require("../Connections/redis");
 const nodeMailer=require("nodemailer")
 const userRouter=express.Router()
+const {validation}=require("../middleware/validation.middleware")
 
 // DEPLOYED LINK
 // https://determined-cuff-links.cyclic.app/
 
-userRouter.post("/register",async(req,res)=>{
-const {name,email,gender,address}=req.body
+userRouter.post("/register",validation,async(req,res)=>{
+const {Firstname, Lastname, email, password}=req.body
 try {
-            const user=new UserModel({name,email,gender,address})
+    bcrypt.hash(password, 5, async function (err, hash) {
+        if (err) {
+           res.send({ "msg": "something went wrong", "error": err.message })
+        }else{
+            const user=new UserModel({Firstname, Lastname, email, password:hash})
             await user.save()
             res.status(200).send({"msg":"Registration has been done!"})
+        }
+    })
+            
 } catch (error) {
     res.status(400).send({"msg":error.message})
 }
@@ -64,7 +72,7 @@ userRouter.post("/sendmail",async(req,res)=>{
                 });
               
                 const otp = Math.floor(100000 + Math.random() * 900000);
-                client.set(otp,otp);
+                client.set(otp, otp, "EX", 300);
             
                 let info = await transporter.sendMail ({
                   from: 'joestheticclub@gmail.com', // sender address
