@@ -3,23 +3,31 @@ import Carousel from 'react-bootstrap/Carousel';
 import "../App.css"
 function UncontrolledExample() {
   return (
-    <Carousel>
-      <Carousel.Item interval={2000}>
-        <div>
-            <img className='img' src="https://artimg.gympik.com/articles/wp-content/uploads/2019/10/Featured1.jpg" alt="" />
+    <Carousel interval={8000}>
+      <Carousel.Item  id='Home1'>
+      <div>
+            <div className = "img" >
+              </div>
         </div>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption >
+        <div className='sliding'>
+        <h3>BUY IN AFFORDABLE PRICE</h3>
+        <h4>AT 8$ ANY COURSE</h4>
+        <button>BUY</button>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-      <div>
-            <img className='img' src="https://tropeaka.com/cdn/shop/articles/main_image_d517c79f-4ec7-4946-bb5e-db7e80623e85_1080x.jpg?v=1571697737" alt="" />
+
+      <Carousel.Item id='Home2'>
+      <div className='img'>
+          
         </div>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className='sliding'>
+        <h3>BUY IN AFFORDABLE PRICE</h3>
+        <h4>AT 8$ ANY COURSE</h4>
+        <button>BUY</button>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
       
