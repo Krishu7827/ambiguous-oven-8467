@@ -17,8 +17,8 @@ function SocialMedia(){
          <div className="SocialMedia-container">
             <div className="social-icons">
             <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="" />
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="" />
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" alt="" />
           </div>
          </div>
         </div>
