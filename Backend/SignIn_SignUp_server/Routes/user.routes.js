@@ -1,11 +1,12 @@
 const express=require("express")
 const {UserModel}=require("../Model/user.model")
-// const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const {client}=require("../Connections/redis");
 const nodeMailer=require("nodemailer")
 const userRouter=express.Router()
-const {validation}=require("../middleware/validation.middleware")
+const {validation}=require("../middleware/validation.middleware");
+
 
 // DEPLOYED LINK
 // https://determined-cuff-links.cyclic.app/
@@ -59,8 +60,12 @@ userRouter.post("/sendmail",async(req,res)=>{
     const {email}=req.body;
     try{
         let user= await UserModel.findOne({email});
+        //console.log(user.password)
         if(user){
+            const token=jwt.sign({userId:user._id},"masai");
+            console.log(token);
             async function main(){
+            
                 let transporter = nodeMailer.createTransport({
                   host: "smtp.gmail.com",
                   port: 587,
@@ -81,7 +86,7 @@ userRouter.post("/sendmail",async(req,res)=>{
                   text: `Your OTP for Joesthetic Club verification : ${otp}`, // plain text body
                 });
                 if(info){
-                    res.status(200).send({msg:"Mail sent successfully"}) 
+                    res.status(200).send({msg:"Mail sent successfully",token:token}) 
                 }else{
                     res.status(400).send({msg:"Internal Errord"})
                 }
