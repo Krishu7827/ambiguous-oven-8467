@@ -2,97 +2,100 @@
 
 
 
-#CourseOfHome{
+#CourseOfHome {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 60px;
 }
-.headerOfCourse h3{
+
+.headerOfCourse h3 {
   font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
-#CourseOfHome>button{
- margin-left: 45%;
- margin-top: 50px;
+#CourseOfHome>button {
+  margin-left: 45%;
+  margin-top: 50px;
 }
 
-#CourseOfHome hr{
- margin: 0 auto;
+#CourseOfHome hr {
+  margin: 0 auto;
   width: 50px;
   border: 1px solid black;
 }
 
-.img{
- 
+.img {
+
   width: 100%;
   height: 700px;
 }
 
-.CourseChild{
+.CourseChild {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
- column-gap: 10px;
- 
- 
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+
+
 }
-.CourseChild div{
+
+.CourseChild div {
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding-bottom: 10px;
-  
+
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.CourseChild div p{
+.CourseChild div p {
   margin-left: 10px;
   font-family: 'Oswald', sans-serif;
 }
-.CourseChild div>img{
+
+.CourseChild div>img {
   width: 100%;
- 
+
 }
 
-.CourseChild div>button{
- margin-left: 40%;
- appearance: none;
- background-color: #2ea44f;
- border: 1px solid rgba(27, 31, 35, .15);
- border-radius: 6px;
- box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
- box-sizing: border-box;
- color: #fff;
- cursor: pointer;
- display: inline-block;
- font-family: 'Oswald', sans-serif;
- font-size: 14px;
- font-weight: 500;
- line-height: 20px;
- padding: 6px 16px;
- position: relative;
- text-align: center;
- text-decoration: none;
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- vertical-align: middle;
- white-space: nowrap;
- 
- 
+.CourseChild div>button {
+  margin-left: 40%;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+
+
 }
 
-.CourseChild div>button:focus:not(:focus-visible):not(.focus-visible){
+.CourseChild div>button:focus:not(:focus-visible):not(.focus-visible) {
   box-shadow: none;
   outline: none;
 }
 
-.CourseChild div>button:hover{
-  
-    background-color: #2c974b;
-  
+.CourseChild div>button:hover {
+
+  background-color: #2c974b;
+
 }
 
 .CourseChild div>button:focus {
@@ -157,7 +160,7 @@
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background:  #ffffff15;
+  background: #ffffff15;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
@@ -184,132 +187,142 @@
 
 /**************************************** Our Instructors***********************************************/
 
-.OurInstructor-header>h3{
+.OurInstructor-header>h3 {
   font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
-.OurInstructor{
+.OurInstructor {
   margin-top: 78px;
 }
 
-.OurInstructor hr{
+.OurInstructor hr {
   margin: 0 auto;
-   width: 55px;
-   border: 1px solid black;
- }
+  width: 55px;
+  border: 1px solid black;
+}
 
- .OurInstructors-div{
+.OurInstructors-div {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
   row-gap: 30px;
   padding-left: 40px;
   padding-right: 40px;
 
 
- }
- .OurInstructors-div>div{
+}
+
+.OurInstructors-div>div {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding-bottom: 20px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
- }
- .OurInstructors-div div>img{
+}
+
+.OurInstructors-div div>img {
   width: 100%;
- }
- .OurInstructors-div div>p{
+}
+
+.OurInstructors-div div>p {
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
- }
+}
 
- .OurInstructors-socialMedia a>img{
+.OurInstructors-socialMedia a>img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
- }
+}
 
- /********************Our Instructor***************************************/
+/********************Our Instructor***************************************/
 
 
- /**************************************testimonial*****************************************/
- .testimonial-header>h3{
+/**************************************testimonial*****************************************/
+.testimonial-header>h3 {
   font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
-#testimonial hr{
+#testimonial hr {
   margin: 0 auto;
-   width: 55px;
-   border: 1px solid black;
- }
+  width: 55px;
+  border: 1px solid black;
+}
 
- #testimonial{
+#testimonial {
   margin-top: 100px;
- }
+}
 
- #testimonials{
+#testimonials {
   margin-top: 40px;
- }
+}
 
-#item1{
+#item1 {
   padding-left: 7%;
   padding-right: 15%;
   padding-bottom: 7%;
 }
 
-#item2{
-  padding-left: 7%;
-  padding-right: 15%;
-  padding-bottom: 7%;
-}
-#item3{
+#item2 {
   padding-left: 7%;
   padding-right: 15%;
   padding-bottom: 7%;
 }
 
-.testimonial-image{
-  width:20%;
+#item3 {
+  padding-left: 7%;
+  padding-right: 15%;
+  padding-bottom: 7%;
+}
+
+.testimonial-image {
+  width: 20%;
   border-radius: 100%;
-  margin:20px
+  margin: 20px
 }
 
-#testimonials{
-   
+#testimonials {
+
   text-align: center;
-  background-color:#F3AA60 ;
+  background-color: #F3AA60;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#press{
+#press {
   background-color: #F3AA60;
   text-align: center;
   padding-bottom: 3%;
 }
-.press-logo{
-  width:15%;
+
+.press-logo {
+  width: 15%;
   margin: 20px 20px 50px;
 }
-#item1>h3,#item2>h3,#item3>h3{
+
+#item1>h3,
+#item2>h3,
+#item3>h3 {
   font-size: 40px;
 }
+
 /****************************************testimonial****************************/
 
 
 /**************************************About Us*****************************************/
-#AboutUs{
+#AboutUs {
   margin-top: 80px;
 }
-.AboutUs-header>h3{
+
+.AboutUs-header>h3 {
   font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
@@ -317,15 +330,15 @@
 }
 
 
-#AboutUs hr{
+#AboutUs hr {
   margin: 0 auto;
-   width: 55px;
-   border: 1px solid black;
- }
+  width: 55px;
+  border: 1px solid black;
+}
 
- /*****************************faq*******************************************/
- 
- .container {
+/*****************************faq*******************************************/
+
+.container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -333,8 +346,8 @@
 
 .container h2 {
   text-align: center;
- color:silver;
- font-family: 'Oswald', sans-serif;
+  color: silver;
+  font-family: 'Oswald', sans-serif;
 }
 
 .faq {
@@ -367,8 +380,8 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.AboutUs-description>h4{
- text-align: center;
+.AboutUs-description>h4 {
+  text-align: center;
 }
 
 /******************************************About Us******************************************/
@@ -380,23 +393,24 @@
 
 /*********************************************Social Media**************************************/
 
-#SocialMedia hr{
+#SocialMedia hr {
   margin: 0 auto;
-   width: 40px;
-   border: 1px solid black;
- }
+  width: 40px;
+  border: 1px solid black;
+}
 
-#SocialMedia{
+#SocialMedia {
   margin-top: 30px;
 }
-.SocialMedia-header>h3{
+
+.SocialMedia-header>h3 {
   font-weight: 500;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
-.social-icons img{
+.social-icons img {
   width: 50px;
 }
 
@@ -407,81 +421,158 @@
 
 .social-icons {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px; /* Adjust the gap as needed */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* Adjust the gap as needed */
   padding-top: 20px;
 }
 
 
 /******************************************Social Media*******************************************/
- 
+
 @media screen and (max-width: 767px) {
- 
-.img{
-  height:auto;
+
+  .img {
+    height: auto;
+  }
+
+  .headerOfCourse h3 {
+    font-size: 30px;
+
+  }
+
+  .social-icons img {
+    width: 35px;
+  }
+
+  .OurInstructor-header h3 {
+    font-size: 30px;
+
+  }
+
+  .testimonial-header>h3 {
+    font-size: 30px;
+
+  }
+
+
+
+  .SocialMedia-header>h3 {
+    font-size: 30px;
+
+  }
+
+  .AboutUs-header>h3 {
+    font-size: 30px;
+
+  }
+
+  #item1>h3,
+  #item2>h3,
+  #item3>h3 {
+    font-size: large;
+  }
+
+  .CourseChild {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+
+  }
+
+  #CourseOfHome {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .CourseChild div p {
+    margin-right: 2px;
+    word-spacing: 0.3em;
+  }
+
+  #CourseOfHome>button {
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+
+  .OurInstructors-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    row-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
 }
 
-.headerOfCourse h3{
-  font-size: 30px;
- 
-}
-.social-icons img{
-  width: 35px;
-}
-.OurInstructor-header h3{
-  font-size: 30px;
- 
+
+/* nav.jsx */
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.testimonial-header>h3{
-  font-size: 30px;
- 
+a {
+  text-decoration: none;
 }
 
-
-
-.SocialMedia-header>h3{
-  font-size: 30px;
- 
-}
-.AboutUs-header>h3{
-  font-size: 30px;
- 
+.nav-logo a {
+  color: red;
 }
 
-#item1>h3,#item2>h3,#item3>h3{
-   font-size: large;
+.navbar {
+  border: 1px solid;
+  height: 90px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.CourseChild{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
- row-gap: 10px;
- 
-}
-#CourseOfHome{
-  padding-left: 20px;
-  padding-right: 20px;
-
+.mid-nav {
+  border: 1px solid;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
 }
 
-.CourseChild div p{
-  margin-right: 2px;
- word-spacing: 0.3em;
+.nav-logo {
+  /* height: 60px; */
+  /* border: 1px solid; */
+  /* margin: 0px auto; */
+  padding: 25px;
+  font-size: 20px;
+  color: red;
 }
 
-#CourseOfHome>button{
-  margin-top: 20px;
-  margin-left: 30%;
- }
+.nav-list {}
 
- .OurInstructors-div{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  
-  row-gap: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+.nav-list ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  /* line-height: 1.5; */
+}
 
- }
+.nav-list ul li {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
 }
