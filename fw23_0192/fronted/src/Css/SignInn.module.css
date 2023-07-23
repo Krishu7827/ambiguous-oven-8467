@@ -8,6 +8,16 @@
     background-size: cover;
   background-position: center;
 }
+.img2{
+   background-image: url("../images/google\ oauth.jpg");
+   width: 70%;
+   height: 50px;
+   position: absolute;
+   top: -30px;
+   left: 60px;
+} 
+
+
 form {
     position: absolute;
     top: 50%;

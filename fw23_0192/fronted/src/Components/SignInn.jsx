@@ -11,6 +11,8 @@ const SignInn = () => {
     <div>
    <img className={style.img} />
    <form >
+    <button   className={style.img2}></button>
+    <button className={style.img3}></button>
          <h2>Email</h2>
         <input type="text" placeholder="Enter your Email 📩"  />
       <button className={style.login} >request OPT</button>

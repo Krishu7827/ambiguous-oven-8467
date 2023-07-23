@@ -15,7 +15,7 @@
 }
 form {
     position: absolute;
-    top: 60%;
+    top:48%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -29,6 +29,14 @@ form {
     color:red
   }
   
+  .img2{
+    background-image: url("../images/google\ oauth.jpg");
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 60px;
+ } 
   input[type="text"] {
     width: 300px; /* Adjust the width as needed */
     height:30px; /* Adjust the height as needed */
