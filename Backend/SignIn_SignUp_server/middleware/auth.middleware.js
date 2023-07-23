@@ -4,9 +4,9 @@ function auth(req,res,next){
     try{
         const token = req.headers.authorization.split(" ")[1]
         if(token){
-            var decoded = jwt.verify(token, 'accesstoken');
+            var decoded = jwt.verify(token, 'masai');
             if(decoded){
-                req.body.userID = decoded.userID;
+                req.body.userId = decoded.userId;
                 next();
             }else{
                 res.status(401).send({"msg":"Invalid User From Middleware auth "})
