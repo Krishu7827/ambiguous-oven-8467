@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import style from '../Css/Signup.module.css'
-
+import {useNavigate} from 'react-router-dom';
 function Signup() {
+  
+  const navigate = useNavigate()
   
 
 // const RegisterForm = () => {
@@ -11,7 +13,8 @@ function Signup() {
   const [password, setPassword] = useState("");
   // const [gender, setGender] = useState("");/
 
-  const onSignup = () => {
+  const onSignup = (e) => {
+    e.preventDefault()
     const payload = {
       Firstname: Firstname,
       Lastname : Lastname,
@@ -21,7 +24,7 @@ function Signup() {
     };
     console.log(payload)
 
-    fetch("https://wild-pink-hedgehog-cap.cyclic.app/users/register", {
+    fetch("http://localhost:8000/users/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -32,7 +35,8 @@ function Signup() {
       .then((res) => {
         console.log(res);
         alert(res.msg);
-        // window.location.href = "login.html";
+        // window.location.href = "login.html";\
+        navigate('/SignIn')
       });
    };
   
@@ -41,7 +45,7 @@ function Signup() {
         
        <img className={style.img} />
       
-       <form>
+       <form onSubmit={onSignup}>
        <h2 className={style.heading}>CREATE YOUR ACCOUNT HERE!!</h2>
        <button className={style.img2}></button>
         <h3>fIRST NAME</h3>
@@ -53,9 +57,9 @@ function Signup() {
     <h3>PASSWORD</h3>
     <input className={style.pass1} value={password} onChange={(e) => setPassword(e.target.value)}  type="password" placeholder='password' id='pass1' />
     <h3>Conform Password</h3>
-    <input className={style.pass2} type="password" placeholder='conform password' id='pass2'/>
+    <input className={style.pass2} type="password" placeholder='confirm password' id='pass2'/>
 
-    <button className={style.btn} onClick={onSignup} >CREATE ACCOUNT</button>
+    <input className={style.btn} type={'submit'} placeholder='CREATE ACCOUNT' />
        </form>
        
     </div>
