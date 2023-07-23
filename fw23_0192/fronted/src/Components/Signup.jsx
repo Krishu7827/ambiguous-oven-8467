@@ -1,6 +1,14 @@
 import React from 'react'
 import style from '../Css/Signup.module.css'
+
 function Signup() {
+  // const [first, setfirst] = useState(second)
+  // const useEffect(() => {
+  // fetch("")
+  
+    
+  // }, [])
+  
   return (
     <div>
         
@@ -21,6 +29,7 @@ function Signup() {
 
     <button className={style.btn}>CREATE ACCOUNT</button>
        </form>
+       
     </div>
   )
 }

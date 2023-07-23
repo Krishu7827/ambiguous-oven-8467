@@ -19,45 +19,46 @@ form {
    
   }
   form h2 {
-    text-align: start;
+    text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: red
+    color: red;
+    padding-top: 20px;
   }
   
   input[type="text"] {
     width: 300px; /* Adjust the width as needed */
-    height:30px; /* Adjust the height as needed */
+    height:20px; /* Adjust the height as needed */
     padding: 5px 50px;
     font-size: 20px;
  
   }
   .title {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
     color: rgb(241, 13, 13);
   }
   .login{
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, 50%);
-    padding: 12px 120px;
+    padding: 5px 100px;
     background-color: red;
     color: white;
-    /* font-size: 15px; */
+    font-size: 15px;
   }
   .account {
     position: absolute;
-    top: 92%;
-    left: 45%;
+    top: 160%;
+    left: 30%;
     color: rgb(199, 193, 193);
     text-decoration: underline;
   }
   .pass{
     position: absolute;
-    top: 102%;
+    top: 98%;
     left: 45%;
     color: white;
   }
