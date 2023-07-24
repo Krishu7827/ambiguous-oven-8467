@@ -13,17 +13,23 @@ const {validation}=require("../middleware/validation.middleware");
 
 userRouter.post("/register",validation,async(req,res)=>{
 const {Firstname, Lastname, email, password}=req.body
+
+
 try {
-    bcrypt.hash(password, 5, async function (err, hash) {
-        if (err) {
-           res.send({ "msg": "something went wrong", "error": err.message })
-        }else{
-            const user=new UserModel({Firstname, Lastname, email, password:hash})
-            await user.save()
-            res.status(200).send({"msg":"Registration has been done!"})
-        }
-    })
-            
+    const user=await UserModel.findOne({email})
+    if(!user){
+        bcrypt.hash(password, 5, async function (err, hash) {
+            if (err) {
+               res.send({ "msg": "something went wrong", "error": err.message })
+            }else{
+                const user=new UserModel({Firstname, Lastname, email, password:hash})
+                await user.save()
+                res.status(200).send({"msg":"Registration has been done!"})
+            }
+        })
+    }else{
+        res.send({msg:"You can directly login"})
+    }         
 } catch (error) {
     res.status(400).send({"msg":error.message})
 }
