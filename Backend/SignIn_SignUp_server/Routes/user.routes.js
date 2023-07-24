@@ -12,12 +12,11 @@ const {validation}=require("../middleware/validation.middleware");
 // https://determined-cuff-links.cyclic.app/
 
 userRouter.post("/register",validation,async(req,res)=>{
-const {Firstname, Lastname, email, password}=req.body
+
 
 
 try {
-    const user=await UserModel.findOne({email})
-    if(!user){
+    const {Firstname, Lastname, email, password}=req.body
         bcrypt.hash(password, 5, async function (err, hash) {
             if (err) {
                res.send({ "msg": "something went wrong", "error": err.message })
@@ -26,10 +25,7 @@ try {
                 await user.save()
                 res.status(200).send({"msg":"Registration has been done!"})
             }
-        })
-    }else{
-        res.send({msg:"You can directly login"})
-    }         
+        })    
 } catch (error) {
     res.status(400).send({"msg":error.message})
 }
@@ -83,7 +79,7 @@ userRouter.post("/sendmail",async(req,res)=>{
                 });
               
                 const otp = Math.floor(100000 + Math.random() * 900000);
-                client.set(otp, otp, "EX", 300);
+                await client.set(otp, otp, "EX", 300);
             
                 let info = await transporter.sendMail ({
                   from: 'joestheticclub@gmail.com', // sender address
