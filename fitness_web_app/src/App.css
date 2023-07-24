@@ -528,6 +528,55 @@ font-weight: 700;
   border-radius: 50%;
 }
 
+/* Card css start */
+
+
+.Cardcontainer {
+  border: 1px solid;
+  /* display: flex; */
+  width: 95%;
+  margin: auto;
+}
+
+.Sorting {
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.Card-Data {
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.CardBox {
+  border: 1px solid;
+
+  display: flex;
+}
+
+.Details-section {
+  border: 1px solid;
+  padding: 10px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.card-img {
+  height: 220px;
+  width: 350px;
+  padding: 10px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+}
+
+/* Card Css end */
+
+
+
 /**********************Footer*************************/
  
 /***************Navbar*************************/
