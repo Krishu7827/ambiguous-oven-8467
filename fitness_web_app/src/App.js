@@ -1,25 +1,23 @@
-import UncontrolledExample from './Components/Home';
 import './App.css';
-import CourseOfHome from './Components/CourseOfHome';
-import OurInstructor from './Components/OurInstructor';
 import AboutUs from './Components/AboutUs';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Testimonial from './Components/testimonial';
-import SocialMedia from './Components/SocialMedia';
-import Footer from './Components/Footer';
+import HomePage from './Components/HomePage';
 import Navbar from './Components/Navbar';
+import { Routes, Route } from "react-router-dom"
+import Signup from './Components/Signup';
+import SignInn from './Components/SignInn';
 function App() {
   return (
- <div id='App'>
-  <Navbar/>
-   <UncontrolledExample/>
-   <CourseOfHome/>
-   <OurInstructor/>
-   <Testimonial/>
-   <AboutUs/>
-   <SocialMedia/> 
-   <Footer/>
- </div>
+    <div id='App'>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/register' element={<Signup />} />
+        <Route path='/login' element={<SignInn />} />
+        
+      </Routes>
+
+    </div>
   );
 }
 
